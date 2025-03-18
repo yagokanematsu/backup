@@ -10,5 +10,3 @@ for x in a:
 final = ''.join(final)
 final = final.replace('  ',' ')
 print(final)
-
-
