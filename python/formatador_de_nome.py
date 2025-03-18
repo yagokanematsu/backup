@@ -1,12 +1,14 @@
 a = [x for x in input().lower()]
-b = []
+final = []
 cont = 0
 for x in a:
-    if cont == 0 or (a[a.index(x)-1].isspace() and not a[a.index(x)+2].isspace()):
-        b.append(x.upper())
+    if cont == 0 or a[cont-1].isspace():
+        final.append(x.upper())
     else:
-        b.append(x)
+        final.append(x)
     cont+=1
-b = ''.join(b)
-b = b.replace('  ',' ')
-print(b)
+final = ''.join(final)
+final = final.replace('  ',' ')
+print(final)
+
+
