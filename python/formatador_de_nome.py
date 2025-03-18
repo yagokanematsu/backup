@@ -8,4 +8,5 @@ for x in a:
         b.append(x)
     cont+=1
 b = ''.join(b)
+b = b.replace('  ',' ')
 print(b)
